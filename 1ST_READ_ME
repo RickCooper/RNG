@@ -1,0 +1,17 @@
+This folder contains source code for a model of RNG based on the
+supervisory system, and implemented within a system based loosely on
+COGENT.
+
+To build the program, use "make" from the unix prompt. This shoudl create two
+exectuables: rng and xrng
+
+rng is the basic standalone generation program. Everything is compiled
+in and you will need to check the main() routine in rng.c to see how
+it is configured.
+
+xrng provides an X interface to the rng program. It required GTK+
+(version 2), which is now deprecated.
+
+There are a bunhc of other executable programs that can be made by the
+makefile. These are for scanning the parameter space and generating
+model fits.
